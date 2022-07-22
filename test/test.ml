@@ -9,3 +9,5 @@ let a_implies_a a ctx = match M.implies_intro (ctx, Implies(a, a)) with
   | _ -> failwith "Unreachable"
 
 let _ = a_implies_a False []
+
+let _ = a_implies_a True []
